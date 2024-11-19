@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from random import randint
+import random
 
-number = randint
+number = random.randint(-10,10)
 
 if number < 0:
 	print(number, "is negative")
