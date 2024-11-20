@@ -7,4 +7,3 @@ def uppercase(str):
         else:
             result += char  # Keep the character unchanged if it's not lowercase
     print(result)  # First print function to output the result
-    print()  # Second print function to add a newline
