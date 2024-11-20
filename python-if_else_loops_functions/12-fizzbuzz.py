@@ -8,4 +8,5 @@ for i in range(1, 101):  # Itération de 1 à 100
         print("Buzz", end=" ")
     else:
         print(i, end=" ")
-print()  # Ajoutez cette ligne pour s'assurer qu'il y a une nouvelle ligne après la dernière valeur
+
+print()  # Ajoutez une nouvelle ligne après la dernière valeur
