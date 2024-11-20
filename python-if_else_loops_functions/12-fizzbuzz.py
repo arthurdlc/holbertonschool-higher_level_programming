@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-for i in range(101):  # Corrected to use parentheses
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")  # Print FizzBuzz if divisible by both 3 and 5
-    elif i % 3 == 0:
-        print("Fizz")  # Print Fizz if divisible by 3
-    elif i % 5 == 0:
-        print("Buzz")  # Print Buzz if divisible by 5
-    else:
-        print(i)  # Print the number if not divisible by 3 or 5
+
+def fizzbuzz():
+    result = []  # Create a list to hold the results
+    for i in range(101):  # Loop from 0 to 100
+        if i % 3 == 0 and i % 5 == 0:
+            result.append("FizzBuzz")  # Append "FizzBuzz" for multiples of both
+        elif i % 3 == 0:
+            result.append("Fizz")  # Append "Fizz" for multiples of 3
+        elif i % 5 == 0:
+            result.append("Buzz")  # Append "Buzz" for multiples of 5
+        else:
+            result.append(str(i))  # Append the number itself if not a multiple
+
+    print(" ".join(result) + " $")  # Join the results with spaces and print with a trailing dollar sign
+
+# Call the fizzbuzz function
+fizzbuzz()
