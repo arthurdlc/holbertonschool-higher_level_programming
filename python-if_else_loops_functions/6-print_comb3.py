@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-
-for i in range(10):  # Première boucle : i va de 0 à 9
-    for j in range(i + 1, 10):  # Deuxième boucle : j commence à i+1 pour éviter les répétitions
-        if i == 8 and j == 9:  # Cas particulier pour la dernière combinaison
+for i in range(10):  # Outer loop for the first digit
+    for j in range(i + 1, 10):  # Inner loop for the second digit
+        if i == 8 and j == 9:  # Last combination
             print(f"{i}{j}")
         else:
-            print(f"{i}{j}", end=", ")  # Ajoute une virgule et un espace
+            print(f"{i}{j}", end=", ")  # Print with comma and space
