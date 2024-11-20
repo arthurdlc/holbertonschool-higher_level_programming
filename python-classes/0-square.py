@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-"""this class present a square"""
+"""This module defines a Square class."""
+
 class Square:
-    """this is my first class"""
+    """This is my first class."""
