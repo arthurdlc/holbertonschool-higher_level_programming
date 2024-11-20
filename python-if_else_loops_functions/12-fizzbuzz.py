@@ -1,18 +1,15 @@
 #!/usr/bin/python3
 
 def fizzbuzz():
-    result = []  # Create a list to hold the results
-    for i in range(101):  # Loop from 0 to 100
+    result = []  # Créer une liste pour stocker les résultats
+    for i in range(101):  # Boucle de 0 à 100
         if i % 3 == 0 and i % 5 == 0:
-            result.append("FizzBuzz")  # Append "FizzBuzz" for multiples of both
+            result.append("FizzBuzz")  # Ajouter "FizzBuzz" pour les multiples de 3 et 5
         elif i % 3 == 0:
-            result.append("Fizz")  # Append "Fizz" for multiples of 3
+            result.append("Fizz")  # Ajouter "Fizz" pour les multiples de 3
         elif i % 5 == 0:
-            result.append("Buzz")  # Append "Buzz" for multiples of 5
+            result.append("Buzz")  # Ajouter "Buzz" pour les multiples de 5
         else:
-            result.append(str(i))  # Append the number itself if not a multiple
+            result.append(str(i))  # Ajouter le nombre lui-même s'il n'est pas un multiple
 
-    print(" ".join(result) + " $")  # Join the results with spaces and print with a trailing dollar sign
-
-# Call the fizzbuzz function
-fizzbuzz()
+    print(" ".join(result))  # Joindre les résultats avec des espaces et les imprimer
