@@ -2,7 +2,7 @@
 
 def fizzbuzz():
     result = []  # Créer une liste pour stocker les résultats
-    for i in range(101):  # Boucle de 0 à 100
+    for i in range(1, 101):  # Boucle de 1 à 100
         if i % 3 == 0 and i % 5 == 0:
             result.append("FizzBuzz")  # Ajouter "FizzBuzz" pour les multiples de 3 et 5
         elif i % 3 == 0:
