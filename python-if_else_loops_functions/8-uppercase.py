@@ -6,4 +6,4 @@ def uppercase(str):
             result += chr(ord(char) - 32)  # Convert to uppercase by subtracting 32 from ASCII value
         else:
             result += char  # Keep the character unchanged if it's not lowercase
-    print(result)  # Print the result in uppercase
+    print("{}".format(result))  # Print the result using string format
