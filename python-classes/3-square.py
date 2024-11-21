@@ -16,6 +16,9 @@ class Square:
         self.__size = size  # Equivalent d'un this en java/php
 
     def area(sefl):
+        """
+        c'est une methode qui renvoie l'air de l'objet en faisant size²
+        """
         int self = self.__size
         int area = self ** 2
         return area
