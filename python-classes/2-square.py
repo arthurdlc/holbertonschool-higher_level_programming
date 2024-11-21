@@ -10,5 +10,7 @@ class Square:
         Initialize an instance of the Square class with a private attribute.
         """
         self.__size = size  # Private attribute
-        assert isinstance(size, int), "size is not an integer"
-        assert self.__size < 0, "size must be >= 0"
+        if not isinstance(size, int):
+            raise TypeError("size is not an integer")
+        if self.__size < 0:
+            raise ValueError("size must be >= 0")
