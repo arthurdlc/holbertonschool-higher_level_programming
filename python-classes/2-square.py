@@ -11,3 +11,4 @@ class Square:
         """
         self.__size = size  # Private attribute
         assert isinstance(size, int), "size is not an integer"
+        assert self.__size < 0, "size must be >= 0"
