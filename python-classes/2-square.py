@@ -12,5 +12,5 @@ class Square:
         self.__size = size  # Private attribute
         if not isinstance(size, int):
             raise TypeError("size is not an integer")
-        if self.__size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
