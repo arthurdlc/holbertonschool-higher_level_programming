@@ -19,5 +19,4 @@ class Square:
         """
         c'est une methode qui renvoie l'air de l'objet en faisant size²
         """
-        int area = self ** 2
-        return area
+        return self ** 2
