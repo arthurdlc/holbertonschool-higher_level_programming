@@ -15,7 +15,7 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size  # Equivalent d'un this en java/php
 
-    def area(sefl):
+    def area(self):
         """
         c'est une methode qui renvoie l'air de l'objet en faisant size²
         """
