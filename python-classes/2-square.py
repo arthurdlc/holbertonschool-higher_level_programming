@@ -10,7 +10,7 @@ class Square:
         Initialize an instance of the Square class with a private attribute.
         """
         if not isinstance(size, int):
-            raise TypeError("size is not an integer")
+            raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size  # Equivalent d'un this en java/php
