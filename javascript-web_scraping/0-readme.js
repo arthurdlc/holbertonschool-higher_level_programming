@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-// Retrieve the file path from the first argument
+// trouver le chemin du fichier a lire si ce dernier existe
 const filePath = process.argv[2];
 
 if (!filePath) {
@@ -10,7 +10,7 @@ if (!filePath) {
   process.exit(1);
 }
 
-// Read the file content in UTF-8
+// lire les contenue des fichier sous le format utf8
 fs.readFile(filePath, 'utf8', (err, data) => {
   if (err) {
     console.error(err);
