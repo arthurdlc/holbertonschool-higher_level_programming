@@ -6,7 +6,7 @@ const fs = require('fs');
 const filePath = process.argv[2];
 
 if (!filePath) {
-  console.error(err);
+  console.error('Error: No file specified');
   process.exit(1);
 }
 
