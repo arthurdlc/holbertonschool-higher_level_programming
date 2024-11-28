@@ -10,10 +10,9 @@ if (!filePath) {
 }
 
 // lire les contenue des fichier sous le format utf8
-fs.readFile(filePath, 'utf8', (err, data) => {
+fs.writeFile(filePath, 'utf8', (err) => {
   if (err) {
     console.error(err);
     return;
   }
-  console.log(data);
 });
